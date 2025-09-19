@@ -1,0 +1,632 @@
+'''---------------------------------------------------------------------------
+
+# Feladat: Két szám összege.
+# Írj egy függvényt "osszead" néven, amely két számot kap ésvisszatér a két szám összegével.'''
+def osszead(szam1, szam2):
+    return szam1 + szam2
+    
+print(f'Két szám összege: 12 és -8 összege: 4')
+print(f'Két szám összege: 12 és -8 összege: {osszead(12, -8)}\n')
+
+'''-------------------------------------------------------------------
+
+# Feladat: Melyik a kisebb?
+# Írj egy függvényt "kisebb" néven, amely két számot kap és visszatér a legkisebbel.'''
+def kisebb(szam1, szam2):
+    if szam1 < szam2:
+      return szam1
+    else:
+      return szam2
+    
+
+print(f'Melyik a kisebb?: 12 és -8 közül a kisebb: -8')        
+print(f'Melyik a kisebb?: 12 és -8 közül a kisebb: {kisebb(12, -8)}\n')
+
+'''---------------------------------------------------------------------------
+
+# Feladat: Melyik a nagyobb?
+# Írj egy függvényt "nagyobb" néven, amely két számot kap és visszatér a legnagyobbal.'''
+def nagyobb(szam1, szam2):
+    if szam1 > szam2:
+      return szam1
+    else:
+      return szam2
+    
+print(f'Melyik a nagyobb?: 12 és -8 közül a nagyobb: 12')
+print(f'Melyik a nagyobb?: 12 és -8 közül a nagyobb: {nagyobb(12, -8)}\n')
+
+'''---------------------------------------------------------------------------
+
+# Feladat: Számtani közép
+# Írj "szamtani_kozep" néven függvényt, amely két számot kap bemenetként és visszatér a számtani középpel.'''
+
+def szamtani_kozep(szam1, szam2):
+  return (szam1 + szam2) / 2
+    
+
+print(f'Számtani közép: 3.0 és 5.0 számtani közepe: 4.0')
+print(f'Számtani közép: 3.0 és 5.0 számtani közepe: {szamtani_kozep(3, 5)}\n')
+
+'''---------------------------------------------------------------------------
+
+# Feladat: Négyzet kerülete
+# Írj "negyzet_kerulet" néven függvényt, amely egy négyzet oldalhosszát kapja bemenetként és visszatér a négyzet kerületével.'''
+
+def negyzet_kerulet(oldalhossz):
+    return oldalhossz * 4
+    
+    
+print(f'Négyzet kerülete: Ha 5.1 a négyzet oldala, akkor a négyzet kerülete = 20.4')
+print(f'Négyzet kerülete: Ha 5.1 a négyzet oldala, akkor a négyzet kerülete = {negyzet_kerulet(5.1)}\n')
+
+'''---------------------------------------------------------------------------
+
+# Feladat: Négyzet területe
+# Írj "negyzet_terulet" néven függvényt, amely egy négyzet oldalhosszát kapja bemenetként és visszatér a négyzet területével.'''
+
+def negyzet_terulet(oldalhossz):
+    return oldalhossz **2
+    
+print(f'Négyzet területe: Ha 5.0 a négyzet oldala, akkor a négyzet területe = 25.0')
+print(f'Négyzet területe: Ha 5.0 a négyzet oldala, akkor a négyzet területe = {negyzet_terulet(5.0)}\n')
+
+'''---------------------------------------------------------------------------
+
+# Feladat: Téglalap kerülete
+# Írj "teglalap_kerulet" néven függvényt, amely egy téglalap oldalhosszait kapja bemenetként és visszatér a téglalap kerületével.'''
+
+def teglalap_kerulet(oldal1, oldal2):
+    return (oldal1 + oldal2) * 2
+    
+    
+print(f'Téglalap kerülete: Ha 5 az egyik oldal és 6 a másik oldal, akkor a téglalap kerülete = 22')
+print(f'Téglalap kerülete: Ha 5 az egyik oldal és 6 a másik oldal, akkor a téglalap kerülete = {teglalap_kerulet(5, 6)}\n')
+  
+'''---------------------------------------------------------------------------
+
+# Feladat: Téglalap területe
+# Írj "teglalap_terulet" néven függvényt, amely egy téglalap oldalhosszait kapja bemenetként és visszatér a téglalap területével.'''
+
+def teglalap_terulet(oldal1, oldal2):
+    return oldal1 * oldal2
+    
+
+print(f'Téglalap területe: Ha 5 az egyik oldal és 6 a másik oldal, akkor a téglalap területe = 30')
+print(f'Téglalap területe: Ha 5 az egyik oldal és 6 a másik oldal, akkor a téglalap területe = {teglalap_terulet(5, 6)}\n')
+
+'''------------------------------------------------------------------------------------------------------------
+
+# Feladat: Két szám különbsége
+# Írj "kulonbseg" néven függvényt, amely két számot kap bemenetként és visszatér a két szám különbségével.'''
+def kulonbseg(szam1, szam2):
+    return szam1 - szam2
+    
+    
+print(f'Két szám különbsége: Ha 5 az egyik szám és 6 a másik szám, akkor a két szám különbsége = -1')
+print(f'Két szám különbsége: Ha 5 az egyik szám és 6 a másik szám, akkor a két szám különbsége = {kulonbseg(5, 6)}\n')
+
+'''------------------------------------------------------------------------------------------------------------
+
+# Feladat: Maradékos osztás:  
+# Írj egy "maradek" nevü függvényt, amely két számot kap bemenetként és visszatér a két szám osztásának maradékával. '''
+def maradek(szam1, szam2):
+    return szam1 % szam2
+
+print(f'Maradékos osztás: Ha 9 az egyik szám és 4 a másik szám, akkor a két szám osztásának maradéka = 1')
+print(f'Maradékos osztás: Ha 9 az egyik szám és 4 a másik szám, akkor a két szám osztásának maradéka = {maradek(9, 4)}\n')
+
+'''------------------------------------------------------------------------------------------------------------
+
+# Feladat: Páros szám:  
+Írj egy "paros" nevü függvényt, amely egy számot kap bemenetként, majd True-val tér vissza, ha a szám páros és False-al ha a szám páratlan. '''
+def paros(szam1):
+    if szam1 % 2 == 0:
+      return True
+    else:
+      return False
+
+print(f'Páros szám: Ha a  szám 9 akkor a visszatérési érték: False')
+print(f'Páros szám: Ha a  szám 9 akkor a visszatérési érték: {paros(9)}\n')
+
+'''------------------------------------------------------------------------------------------------------------
+
+# Feladat: Kettővel osztható:  
+# Írj egy "kettovel_oszthato" nevü függvényt, amely egy számot kap bemenetként és True-val tér vissza, ha a szám kettővel osztható és False-al ha nem. '''
+def kettovel_oszthato(szam1):
+  if szam1 % 2 == 0:
+    return True
+  else:
+    return False
+
+print(f'Kettővel osztható: Ha a  szám 12 akkor a visszatérési érték: True')
+print(f'Kettővel osztható: Ha a  szám 12 akkor a visszatérési érték: {kettovel_oszthato(12)}\n')
+
+'''------------------------------------------------------------------------------------------------------------
+
+# Feladat: Hárommal osztható:  
+# Írj egy "harommal_oszthato" nevü függvényt, amely egy számot kap bemenetként és True-val tér vissza, ha a szám hárommal osztható és False-al ha nem. '''
+def harommal_oszthato(szam1):
+  if szam1 % 3 == 0:
+    return True
+  else:
+    return False
+
+print(f'Hárommal osztható: Ha a  szám 15 akkor a visszatérési érték: True')
+print(f'Hárommal osztható: Ha a  szám 15 akkor a visszatérési érték: {harommal_oszthato(15)}\n')
+
+'''------------------------------------------------------------------------------------------------------------
+
+# Feladat: Héttel osztható:  
+# Írj egy "hettel_oszthato" nevü függvényt , amely egy számot kap bemenetként és True-val tér vissza, ha a szám héttel osztható és False-al ha nem. '''
+def hettel_oszthato(szam1):
+  if szam1 % 7 == 0:
+    return True
+  else:
+    return False
+
+print(f'Héttel osztható: Ha a  szám 21 akkor a visszatérési érték: True')
+print(f'Héttel osztható: Ha a  szám 21 akkor a visszatérési érték: {hettel_oszthato(21)}\n')
+
+'''------------------------------------------------------------------------------------------------------------
+
+# Feladat: Kocka térfogat:  
+# Írj egy "kocka_terfogat" nevü függvényt , amely bemenetként megkapja a kocka oldal hosszúságát és a kocka térfogatával tér vissza. '''
+def kocka_terfogat(oldal):
+    return oldal **3
+    
+print(f'Kocka térfogat: Ha az oldal 2 akkor a visszatérési érték: 8')
+print(f'Kocka térfogat: Ha az oldal 2 akkor a visszatérési érték: {kocka_terfogat(2)}\n')
+
+'''------------------------------------------------------------------------------------------------------------
+
+# Feladat: Téglatest térfogat:  
+# Írj egy "teglatest_terfogat" nevü függvényt , amely bemenetként megkapja a téglatest oldalainak hosszúságát és a téglatest térfogatával tér vissza. '''
+def teglatest_terfogat(a, b, c):
+    return a * b * c
+    
+print(f'Téglatest térfogat: Ha az oldalak hossza: 2, 3 és 4 akkor a visszatérési érték: 24')
+print(f'Téglatest térfogat: Ha az oldalak hossza: 2, 3 és 4 akkor a visszatérési érték: {teglatest_terfogat(2, 3, 4)}\n')
+
+'''------------------------------------------------------------------------------------------------------------
+
+# Feladat: Derékszögü háromszög területe:  
+# Írj egy "derekszogu_haromszog_terulet" nevü függvényt , amely bemenetként megkapja a befogók hosszát és a háromszög területével tér vissza. '''
+def derekszogu_haromszog_terulet(befogo1, befogo2):
+    return (befogo1 * befogo2) / 2
+    
+print(f'Derékszögü háromszög területe: Ha az elso befogó hossza: 3 és a második befogó hossza: 4  akkor a visszatérési érték: 6')
+print(f'Derékszögü háromszög területe: Ha az elso befogó hossza: 3 és a második befogó hossza: 4  akkor a visszatérési érték: {derekszogu_haromszog_terulet(3, 4)}\n')
+
+'''-----------------------------------------------------------------------------------------------------------
+
+# Feladat: Derékszögü háromszög átlója: 
+# Írj egy "derekszogu_haromszog_atloja" nevü függvényt , amely bemenetként megkapja a befogók hosszát és az átló hosszával tér vissza. '''
+def derekszogu_haromszog_atloja(befogo1, befogo2):
+  return (befogo1**2 + befogo2**2) **0.5
+    
+    
+print(f'Derékszögü háromszög átlója: Ha az elso befogó hossza: 3 és a második befogó hossza: 4  akkor a visszatérési érték: 5.0')
+print(f'Derékszögü háromszög átlója: Ha az elso befogó hossza: 3 és a második befogó hossza: 4  akkor a visszatérési érték: {derekszogu_haromszog_atloja(3, 4)}\n')
+
+
+'''-----------------------------------------------------------------------------------------------------------
+
+# Feladat: Négyzet átlója:  
+# Írj egy "negyzet_atloja" nevü függvényt , amely bemenetként megkapja a négyzet oldalának hosszát és az átló hosszával tér vissza. '''
+def negyzet_atloja(oldal):
+    return oldal * (2**0.5)
+        
+print(f'Négyzet átlója: Ha az oldal hossza: 10 akkor a visszatérési érték: 14.142135623730951')
+print(f'Négyzet átlója: Ha az oldal hossza: 10 akkor a visszatérési érték: {negyzet_atloja(10)}\n')
+
+'''-----------------------------------------------------------------------------------------------------------
+
+# Feladat: Téglalap átlója: 
+# Írj egy "teglalap_atloja" nevü függvényt , amely bemenetként megkapja az oldalak hosszát és az átló hosszával tér vissza. '''
+def teglalap_atloja(oldal1, oldal2):
+  return (oldal1**2 + oldal2**2) **0.5
+    
+    
+print(f'Téglalap átlója: Ha az egyik oldala hossza: 3 és a másik oldal hossza: 4  akkor a visszatérési érték: 5.0')
+print(f'Téglalap átlója: Ha az egyik oldala hossza: 3 és a másik oldal hossza: 4  akkor a visszatérési érték: {teglalap_atloja(3, 4)}\n')
+
+
+#========================================================================================================================
+
+'''# Python_3.'''
+'''# Az assert előtt levő # eltávolításával egyenként, szelektíven tesztelni tudod a megoldásodat.'''
+'''# A feladat kezdetekor, majd minden feladat során futtatni kell a unit teszteket.'''
+'''#    (pipa a baloldali menüsávon, majd a kék Run tests gomb megnyomása)'''
+'''# A feladat beadásához a képernyő jobb felső részén a SUBMIT gombot kell megnyomni.'''
+'''#01==================================================================================='''
+'''# Feladat: Karakterek száma a fájlban.'''
+'''# Írj egy függvényt karakterek_szama néven amely paraméterként egy fájlnevet kap és visszatér a fájlban levő karakterek számával. ('\n karakterekkel együtt')'''
+
+
+def karakterek_szama(fname):
+    return len(open(fname).read())
+
+
+#assert karakterek_szama("lorem.txt") == 18047
+'''#02-------------------------------------------------------------    '''
+'''# Feladat: Szavak száma a fájlban.'''
+'''# Írj egy függvényt szavak_szama néven amely paraméterként egy fájlnevet kap és visszatér a fájlban levő szavak számával.'''
+
+
+def szavak_szama(fname):
+    return len(open(fname).read().split())
+
+
+#assert szavak_szama("lorem.txt") == 2304
+'''#03-------------------------------------------------------------  '''
+'''# Feladat: Sorok száma a fájlban. '''
+'''# A sorok_szama(fname) függvény visszatér a  fájlban levő sorok számával.   '''
+
+
+def sorok_szama(fname):
+    return len(open(fname).readlines())
+
+'''#assert sorok_szama("lorem.txt") == 82
+
+'''#04-------------------------------------------------------------'''
+'''# Feladat: r betük száma a fájlban. '''
+'''# Az r_betuk_szama(fname) függvény visszatér a  fájlban levő 'r' betük számával.'''
+
+
+def r_betuk_szama(fname):
+    return open(fname).read().count("r")
+
+'''#assert r_betuk_szama("lorem.txt") == 790 
+
+'''#05.-------------------------------------------------------------        '''
+'''# Feladat: lorem szavak száma a fájlban. '''
+'''# 5. A lorem_szavak_szama(fname) függvény visszatér a  fájlban levő "lorem" szavak számával.'''
+
+
+def lorem_szavak_szama(fname):
+    return open(fname).read().count("lorem")
+
+
+#assert lorem_szavak_szama("lorem.txt") == 27
+'''#06-------------------------------------------------------------    '''
+'''# Feladat: A leggyakoribb karakter a fájlban. '''
+'''# A leggyakoribb_karakter(fname) függvény visszatér a  fájlban leggyakrabban előforduló karakterrel.'''
+
+
+def leggyakoribb_karakter(fname):
+    szotar = {}
+    for kar in open(fname).read():
+      szotar[kar] = szotar.get(kar, 0) +1
+    return max(szotar, key=szotar.get)
+
+
+#assert leggyakoribb_karakter("lorem.txt") ==  "i"
+'''#07------------------------------------------------------------- '''
+'''# Feladat: A leghosszabb sor hossza a fájlban. '''
+'''# A leghosszabb_sor_hossza(fname) függvény visszatér a  fájlban levő leghosszabb sor hosszával.'''
+
+
+def leghosszabb_sor_hossza(fname):
+    return max(len(i) for i in open(fname).readlines())
+
+
+#assert leghosszabb_sor_hossza("lorem.txt") == 304
+'''#08-------------------------------------------------------------'''
+'''# Feladat: Téglalap osztály definiálása. [Objektumorientált programozás]'''
+'''# Hozz létre egy osztályt Teglalap néven.'''
+'''# A Teglalap osztály lehetővé teszi a téglalap oldalhosszúságainak tárolását.'''
+'''# A Teglalap osztály rendelkezik egy kerulet() nevü metódussal, amely az osztály segítségével létrehozott objektum metódusaként visszaadja az adott objektum kerületét.'''
+'''# A Teglalap osztály rendelkezik egy terulet() nevü metódussal, amely az osztály segítségével létrehozott objektum metódusaként visszaadja az adott objektum területét.'''
+
+
+class Teglalap:
+    def __init__(self, a, b):
+      self.a = a
+      self.b = b
+    def kerulet(self):
+      return (self.a + self.b) *2
+    def terulet(self):
+      return self.a * self.b
+
+
+#assert Teglalap(3, 4).kerulet() == 14
+#assert Teglalap(3, 4).terulet() == 12
+'''#09-------------------------------------------------------------'''
+'''# Feladat: Négyzet osztály definiálása. [Objektumorientált programozás]'''
+'''# Hozz létre egy osztályt Negyzet néven.'''
+'''# A Negyzet osztály lehetővé teszi a negyzet oldalhosszúságának tárolását.'''
+'''# A Negyzet osztály rendelkezik egy kerulet() nevü metódussal, amely az osztály segítségével létrehozott objektum metódusaként visszaadja az adott objektum kerületét.'''
+'''# A Negyzet osztály rendelkezik egy terulet() nevü metódussal, amely az osztály segítségével létrehozott objektum metódusaként visszaadja az adott objektum területét.'''
+
+
+class Negyzet:
+    def __init__(self, a):
+      self.a = a
+    def kerulet(self):
+      return self.a *4
+    def terulet(self):
+      return self.a**2
+
+
+#assert Negyzet(3).kerulet() == 12
+#assert Negyzet(3).terulet() == 9
+'''#10-------------------------------------------------------------'''
+'''# Feladat: Kocka osztály definiálása. [Objektumorientált programozás]'''
+'''# Hozz létre egy osztályt Kocka néven.'''
+'''# A Kocka osztály lehetővé teszi a kocka oldalhosszúságának tárolását.'''
+'''# A Kocka osztály rendelkezik egy tefogat() nevü metódussal, amely az osztály segítségével létrehozott objektum metódusaként visszaadja az adott objektum térfogatát.'''
+'''# A Kocka osztály rendelkezik egy felszin() nevü metódussal, amely az osztály segítségével létrehozott objektum metódusaként visszaadja az adott objektum felszínét.'''
+
+
+class Kocka:
+    def __init__(self, a):
+      self.a = a
+    def terfogat(self):
+      return self.a**3
+    def felszin(self):
+      return (self.a**2) *6
+
+
+#assert Kocka(3).terfogat() == 27
+#assert Kocka(3).felszin() == 54
+'''#11-------------------------------------------------------------'''
+'''# Feladat: String fájlba írása'''
+'''# Készíts függvényt string_fajlba néven, amely az első paraméterként kapott sztringet fájlba írja.'''
+'''# A fájl nevét második paraméterként kapja meg a függvény.'''
+
+
+def string_fajlba(szoveg, fname):
+    open(fname, "w").write(szoveg)
+
+
+#string_fajlba("csacska macska", "szoveg.txt"); assert open("szoveg.txt").read().strip() == "csacska macska"
+'''#12-------------------------------------------------------------'''
+'''# Feladat: Számtani sorozat fájlba írása'''
+'''# Készíts függvényt szaz_szam_fajlba néven, amely 1-tól 100-ig egyesével kiírja a számokat egy fájlba.'''
+'''# Minden szám kerüljön új sorba.'''
+'''# A fájl nevét paraméterként kapja meg a függvény.'''
+
+
+def szaz_szam_fajlba(fname):
+    with open(fname, "w") as fajl:
+      for i in range(1, 101):
+        fajl.write(str(i) + "\n")
+
+
+#szaz_szam_fajlba("szazas.txt"); assert len(open("szazas.txt").read())
+#szaz_szam_fajlba("szazas.txt"); assert sum([int(i) for i in open("szazas.txt")]) == 5050
+'''#13--------------------------------------------------------------------------------------------'''
+'''# Feladat: Első karakter a szövegfájlban'''
+'''# Írj egy függvényt elso_karakter_a_fajlban néven, amely visszatér egy szövegfájl első karakterével.'''
+'''# A függvény bemenő paramétere a fájl neve.'''
+
+
+def elso_karakter_a_fajlban(fname):
+    return open(fname).read()[0]
+
+
+#assert elso_karakter_a_fajlban("lorem.txt") == "L"
+'''#14--------------------------------------------------------------------------------------------'''
+'''# Feladat: Utolsó karakter a szövegfájlban'''
+'''# Írj egy függvényt utolso_karakter_a_fajlban néven, amely visszatér egy szövegfájl utolsó karakterével.'''
+'''# A függvény bemenő paramétere a fájl neve.'''
+
+
+def utolso_karakter_a_fajlban(fname):
+  return open(fname).read()[-1]
+
+
+#assert utolso_karakter_a_fajlban("lorem.txt") == "."
+'''#15--------------------------------------------------------------------------------------------'''
+'''# Feladat: Számok összege egy szövegfájlban.'''
+'''# Írj egy függvényt szamok_osszege_a_fajlban néven amely visszatér egy szövegfájlban levő számok összegével.'''
+'''# A függvény bemenő paramétere a fájl neve.'''
+
+
+def szamok_osszege_a_fajlban(fname):
+    return sum([int(elem) for elem in open(fname).read().split()])
+
+
+assert szamok_osszege_a_fajlban("szamok1.txt") == 16
+'''#16--------------------------------------------------------------------------------------------'''
+'''# Feladat: Számok átlaga egy szövegfájlban.'''
+'''# Írj egy függvényt szamok_atlaga_a_fajlban néven, amely visszatér egy szövegfájlban levő számok átlagával.'''
+'''# A függvény bemenő paramétere a fájl neve.'''
+
+
+def szamok_atlaga_a_fajlban(fname):
+    lista = [int(elem) for elem in open(fname).read().split()]
+    return sum(lista) / len(lista)
+
+
+assert szamok_atlaga_a_fajlban("szamok1.txt") == 1.0
+'''#17--------------------------------------------------------------------------------------------'''
+'''# Feladat: Páros számok száma egy szövegfájlban.'''
+'''# Írj egy függvényt paros_szamok_szama_a_fajlban néven, amely visszatér egy szövegfájlban levő páros számok számával.'''
+'''# A függvény bemenő paramétere a fájl neve.'''
+
+
+def paros_szamok_szama_a_fajlban(fname):
+    return len([int(elem) for elem in open(fname).read().split() if int(elem) % 2 == 0])
+
+
+assert paros_szamok_szama_a_fajlban("szamok1.txt") == 10
+'''#18--------------------------------------------------------------------------------------------'''
+'''# Feladat: Páratlan számok száma egy szövegfájlban.'''
+'''# Írj egy függvényt paratlan_szamok_szama_a_fajlban néven, amely visszatér egy szövegfájlban levő páratlan számok számával.'''
+'''# A függvény bemenő paramétere a fájl neve.'''
+
+
+def paratlan_szamok_szama_a_fajlban(fname):
+    return len([int(elem) for elem in open(fname).read().split() if int(elem) % 2 == 1])
+
+
+assert paratlan_szamok_szama_a_fajlban("szamok1.txt") == 6
+'''#19--------------------------------------------------------------------------------------------'''
+'''# Feladat: Pozitív számok száma egy szövegfájlban.'''
+'''# Írj egy függvényt pozitiv_szamok_szama_a_fajlban néven, amely visszatér egy szövegfájlban levő pozitiv számok számával.'''
+'''# A függvény bemenő paramétere a fájl neve.'''
+
+
+def pozitiv_szamok_szama_a_fajlban(fname):
+    return len([int(elem) for elem in open(fname).read().split() if int(elem) > 0])
+
+
+assert pozitiv_szamok_szama_a_fajlban("szamok1.txt") == 10
+'''#20--------------------------------------------------------------------------------------------'''
+'''# Feladat: Negatív számok száma egy szövegfájlban.'''
+'''# Írj egy függvényt negativ_szamok_szama_a_fajlban néven, amely visszatér egy szövegfájlban levő negativ számok számával.'''
+'''# A függvény bemenő paramétere a fájl neve.'''
+
+
+def negativ_szamok_szama_a_fajlban(fname):
+    return len([int(elem) for elem in open(fname).read().split() if int(elem) < 0])
+
+
+assert negativ_szamok_szama_a_fajlban("szamok1.txt") == 4
+'''#21--------------------------------------------------------------------------------------------'''
+'''# Feladat: Legkisebb szám egy szövegfájlban.'''
+'''# Írj egy függvényt legkisebb_szam_a_fajlban néven, amely visszatér egy szövegfájlban levő lekisebb számmal.'''
+'''# A függvény bemenő paramétere a fájl neve.'''
+
+
+def legkisebb_szam_a_fajlban(fname):
+    return min([int(elem) for elem in open(fname).read().split()])
+
+
+assert legkisebb_szam_a_fajlban("szamok1.txt") == -6
+'''#22--------------------------------------------------------------------------------------------'''
+'''# Feladat: Legnagyobb szám egy szövegfájlban.'''
+'''# Írj egy függvényt legnagyobb_szam_a_fajlban néven, amely visszatér egy szövegfájlban levő legnagyobb számmal.'''
+'''# A függvény bemenő paramétere a fájl neve.'''
+
+
+def legnagyobb_szam_a_fajlban(fname):
+    return max([int(elem) for elem in open(fname).read().split()])
+
+
+assert legnagyobb_szam_a_fajlban("szamok1.txt") == 4
+'''#23--------------------------------------------------------------------------------------------'''
+'''# Feladat: Párosok egy szövegfájlból.'''
+'''# Írj egy függvényt parosok_a_fajlbol néven, amely visszatér a szövegfájlban levő páros számokkal mint listával.'''
+'''# A függvény bemenő paramétere a fájl neve.'''
+
+
+def parosok_a_fajlbol(fname):
+    return [int(elem) for elem in open(fname).read().split() if int(elem) % 2 == 0]
+
+
+assert parosok_a_fajlbol("szamok1.txt") == [4, 2, 4, 2, 0, -4, -6, 0, 4, 4]
+'''#24--------------------------------------------------------------------------------------------'''
+'''# Feladat: Páratlanok egy szövegfájlból.'''
+'''# Írj egy függvényt paratlanok_a_fajlbol néven, amely visszatér a szövegfájlban levő páratlan számokkal mint listával.'''
+'''# A függvény bemenő paramétere a fájl neve.'''
+
+
+def paratlanok_a_fajlbol(fname):
+    return [int(elem) for elem in open(fname).read().split() if int(elem) % 2 == 1]
+
+
+assert paratlanok_a_fajlbol("szamok1.txt") == [3, 1, 3, 1, -1, -1]
+'''#25--------------------------------------------------------------------------------------------'''
+'''# Feladat: Pozitívok egy szövegfájlból.'''
+'''# Írj egy függvényt pozitiv_a_fajlbol néven, amely visszatér a szövegfájlban levő pozitiv számokkal mint listával.'''
+'''# A függvény bemenő paramétere a fájl neve.'''
+
+
+def pozitivok_a_fajlbol(fname):
+    return [int(elem) for elem in open(fname).read().split() if int(elem) > 0]
+
+
+assert pozitivok_a_fajlbol("szamok1.txt") == [4, 3, 2, 1, 4, 3, 2, 1, 4, 4]
+'''#26--------------------------------------------------------------------------------------------'''
+'''# Feladat: Negatívok egy szövegfájlból.'''
+'''# Írj egy függvényt negativok_a_fajlbol néven, amely visszatér a szövegfájlban levő negativ számokkal mint listával.'''
+'''# A függvény bemenő paramétere a fájl neve.'''
+
+
+def negativok_a_fajlbol(fname):
+    return [int(elem) for elem in open(fname).read().split() if int(elem) < 0]
+
+
+assert negativok_a_fajlbol("szamok1.txt") == [-1, -1, -4, -6]
+
+'''#27--------------------------------------------------------------------------------------------
+
+'''# Feladat: Leggyakoribb szám a szövegfájlban.'''
+'''# Írj egy függvényt leggyakoribb_szam_a_fajlban néven, amely visszatér a szövegfájlban levő leggyakoribb számmal.'''
+'''# A függvény bemenő paramétere a fájl neve.'''
+
+
+def leggyakoribb_szam_a_fajlban(fname):
+    szotar = {}
+    for kar in open(fname).read().split():
+      szotar[kar] = szotar.get(kar, 0) +1
+    return int(max(szotar, key=szotar.get))
+  
+
+
+assert leggyakoribb_szam_a_fajlban("szamok1.txt") == 4
+'''#28--------------------------------------------------------------------------------------------'''
+'''# Feladat: Hárommal osztható számok a szövegfájlban.'''
+'''# Írj egy függvényt harommal_oszthato_szamok_a_fajlban néven, amely visszatér a szövegfájlban levő hárommal osztható számok listájával.'''
+'''# A függvény bemenő paramétere a fájl neve.'''
+
+
+def harommal_oszthato_szamok_a_fajlban(fname):
+    return [int(elem) for elem in open(fname).read().split() if int(elem) % 3 == 0]
+
+
+assert harommal_oszthato_szamok_a_fajlban("szamok1.txt") == [3, 3, 0, -6, 0]
+'''#29--------------------------------------------------------------------------------------------'''
+'''# Feladat: Neggyel osztható számok a szövegfájlban.'''
+'''# Írj egy függvényt neggyel_oszthato_szamok_a_fajlban néven, amely visszatér a szövegfájlban levő neggyel osztható számok listájával.'''
+'''# A függvény bemenő paramétere a fájl neve.'''
+
+
+def neggyel_oszthato_szamok_a_fajlban(fname):
+    return [int(elem) for elem in open(fname).read().split() if int(elem) % 4 == 0]
+
+
+assert neggyel_oszthato_szamok_a_fajlban("szamok1.txt") == [
+    4, 4, 0, -4, 0, 4, 4
+]
+'''#======================================================================================'''
+
+# 1. A karakterek_szama(fname) függvény visszatér a fájlban levő karakterek számával. ('\n karakterekkel együtt')
+fname = "lorem.txt"
+def karakterek_szama(fname):
+  return len(open(fname).read())
+       
+# 2. A szavak_szama(fname) függvény visszatér a fname) fájlban levő szavak számával.
+def szavak_szama(fname):
+  return len(open(fname).read().split())
+          
+# 3.  A sorok_szama(fname) függvény visszatér a  fájlban levő sorok számával.   
+def sorok_szama(fname):
+  return len(open(fname).read().split("\n"))
+          
+# 4. Az r_betuk_szama(fname) függvény visszatér a  fájlban levő 'r' betük számával.
+def r_betuk_szama(fname):
+  return open(fname).read().count("r")
+    
+# 5. A lorem_szavak_szama(fname) függvény visszatér a  fájlban levő "lorem" szavak számával.
+def lorem_szavak_szama(fname):
+  return open(fname).read().count("lorem")
+     
+# 6. A leggyakoribb_karakter(fname) függvény visszatér a  fájlban leggyakrabban előforduló karakterrel.
+def leggyakoribb_karakter(fname):
+  szoveg = open(fname).read()
+  szotar = {}
+  for kar in szoveg:
+    szotar[kar] = szotar.get(kar, 0) +1
+  maxi = max(szotar, key=szotar.get)
+  return maxi
+      
+# 7. A leghosszabb_sor_hossza(fname) függvény visszatér a  fájlban levő leghosszabb sor hosszával.
+def leghosszabb_sor_hossza(fname):
+  fajl = open(fname)
+  sorok_hossza = []
+  for sor in fajl:
+    sorok_hossza.append( len(sor.strip() ))
+  return int(max(sorok_hossza)) + 1
